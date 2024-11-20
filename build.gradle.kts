@@ -24,5 +24,27 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(17)
+}
+
+// add
+sourceSets {
+    main {
+        java {
+            srcDir("src/main/kotlin")
+        }
+// Is needed to detect the html files
+        resources {
+            srcDir("src/main/kotlin")
+        }
+    }
+
+    test {
+        java {
+            srcDir("src/main/kotlin")
+        }
+        resources {
+            srcDir("src/main/kotlin")
+        }
+    }
 }
