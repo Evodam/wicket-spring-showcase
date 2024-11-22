@@ -2,6 +2,7 @@ package de.evodam.playground.de.evodam.wicketspringshowcase
 
 import com.giffing.wicket.spring.boot.starter.app.WicketBootStandardWebApplication
 import de.evodam.wicketspringshowcase.HomePage
+import de.evodam.wicketspringshowcase.JavaHomePage
 import org.apache.wicket.Page
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -18,6 +19,6 @@ fun main() {
 open class WicketApplication : WicketBootStandardWebApplication() {
 
     override fun getHomePage(): Class<out Page> {
-        return HomePage::class.java
+        return JavaHomePage::class.java
     }
 }

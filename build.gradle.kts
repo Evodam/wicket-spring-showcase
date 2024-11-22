@@ -27,6 +27,10 @@ kotlin {
     jvmToolchain(17)
 }
 
+dependencies{
+    testImplementation("com.tngtech.archunit:archunit:1.3.0")
+}
+
 // add
 sourceSets {
     main {
