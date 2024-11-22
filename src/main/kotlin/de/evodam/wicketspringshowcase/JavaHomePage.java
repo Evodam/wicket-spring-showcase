@@ -4,6 +4,7 @@ import com.giffing.wicket.spring.boot.context.scan.WicketHomePage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
+@WicketHomePage
 public class JavaHomePage extends WebPage {
 
     @SpringBean
